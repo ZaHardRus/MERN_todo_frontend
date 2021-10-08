@@ -7,7 +7,7 @@ export const useRoutes = (isLogin) => {
     if(isLogin){
         return (
             <Switch>
-                <Route path='/' exact component={MainPage}></Route>
+                <Route path='/' exact component={MainPage}/>
                 <Redirect to='/' />
             </Switch>
         )
